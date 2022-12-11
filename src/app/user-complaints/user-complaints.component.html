@@ -1,27 +1,22 @@
-
+<app-user-navbar></app-user-navbar>
 <div class="container">
-    <div class="row g-3 mt-5" >
+    <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl 12">
             
             <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email Id</th>
                     <th scope="col">Complaints</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of userData">
-                    <td>{{i.name}}</td>  
-                    <td>{{i.email}}</td>  
                     <td>{{i.complaint}}</td>                  
                    </tr>
                 </tbody>
               </table>
 
-              <button type="button" routerLink="/" class="btn btn-outline-danger">Log out</button>
-
+               
             </div>
 
 

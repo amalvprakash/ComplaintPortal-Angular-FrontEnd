@@ -11,6 +11,9 @@ import { UserHomeComponent } from './user-home/user-home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserComplaintsComponent } from './user-complaints/user-complaints.component';
 
 const myRoute:Routes = [
   {
@@ -32,6 +35,18 @@ const myRoute:Routes = [
   {
     path:"userHome",
     component:UserHomeComponent
+  },
+  {
+    path:"userNavbar",
+    component:UserNavbarComponent
+  },
+  {
+    path:"userProfile",
+    component:UserProfileComponent
+  },
+  {
+    path:"userComplaint",
+    component:UserComplaintsComponent
   }
 ]
 @NgModule({
@@ -41,7 +56,10 @@ const myRoute:Routes = [
     AdminHomeComponent,
     UserLoginComponent,
     UserRegComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    UserNavbarComponent,
+    UserProfileComponent,
+    UserComplaintsComponent
   ],
   imports: [
     BrowserModule,
